@@ -214,7 +214,7 @@ endforeach()
 # (Windows implementations) do not have compiler wrappers, so this approach must be used.
 #
 function (interrogate_mpi_compiler lang try_libs)
-  message(AUTHOR_WARNING " FindMPI-debug:  Considering whether to interrogate the MPI compiler for ${lang} with try_libs=${try_libs}")
+  debugMessage("FindMPI-debug:  Considering whether to interrogate the MPI compiler for ${lang} with try_libs=${try_libs}")
   # MPI_${lang}_NO_INTERROGATE will be set to a compiler name when the *regular* compiler was
   # discovered to be the MPI compiler.  This happens on machines like the Cray XE6 that use
   # modules to set cc, CC, and ftn to the MPI compilers.  If the user force-sets another MPI
