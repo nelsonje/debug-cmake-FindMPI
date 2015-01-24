@@ -7,7 +7,7 @@ function(echo_all_cmake_variable_values)
   message(STATUS "")
 endfunction()
 
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 2.8)
 
 echo_all_cmake_variable_values()
 
