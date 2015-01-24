@@ -9,6 +9,8 @@ endfunction()
 
 cmake_minimum_required(VERSION 3.0)
 
+echo_all_cmake_variable_values()
+
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/Modules/")
 find_package(MPI REQUIRED)
 
